@@ -37,7 +37,7 @@ ln -sf /bin/true /usr/bin/ischroot
 apt-get dist-upgrade -y --no-install-recommends
 
 ## Install HTTPS support for APT.
-$minimal_apt_get_install apt-utils apt-transport-https ca-certificates language-pack-en
+$minimal_apt_get_install apt-utils apt-transport-https ca-certificates language-pack-en gnupg
 
 ## Fix locale.
 locale-gen en_US.UTF-8
