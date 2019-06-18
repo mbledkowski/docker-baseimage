@@ -7,7 +7,7 @@ docker-baseimage
 [![](https://images.microbadger.com/badges/image/quantumobject/docker-baseimage.svg)](https://microbadger.com/images/quantumobject/docker-baseimage "Get your own image badge on microbadger.com")
 
 
-The docker-baseimage base on ubuntu with runit to be able to run different process inside the container. It is using default tools already include in runit for logs,cron,etc (svlogd,crond,pstree,sv,chpst). it support tags (15.04, 15.10 and 16.04)
+The docker-baseimage base on ubuntu with runit to be able to run different process inside the container. It is using default tools already include in runit for logs,cron,etc (svlogd,crond,pstree,sv,chpst). it support tags (17.04, 18.04 and 19.04)
 
 This image will be use to builds others image for [quantumobject](http://www.quantumobject.com) at the moment. It will be build periodical to make sure that any security update is include with the last version from ubuntu repository .
 
@@ -29,13 +29,13 @@ The image is called `quantumobject/docker-baseimage`, and is available on the Do
 
 The docker-baseimage is base on ubuntu image , you can define what version of ubuntu you want to used by using tags
 
-      # for Ubuntu Vivid Veret
-      FROM  quantumobject/docker-baseimage:15.04
+      # for Ubuntu Disco Dingo
+      FROM  quantumobject/docker-baseimage:19.04
 
  or
    
-      # for ubuntu Wily Werewolf
-      FROM quantumobject/docker-baseimage:15.10
+      # for ubuntu Bionic Beaver
+      FROM quantumobject/docker-baseimage:18.04
 
 
 ### Adding additional daemons
