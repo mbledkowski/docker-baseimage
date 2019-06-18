@@ -29,13 +29,13 @@ The image is called `quantumobject/docker-baseimage`, and is available on the Do
 
 The docker-baseimage is base on ubuntu image , you can define what version of ubuntu you want to used by using tags
 
-      # for Ubuntu Vivid Veret
-      FROM  quantumobject/docker-baseimage:15.04
+      # for Ubuntu Disco Dingo
+      FROM  quantumobject/docker-baseimage:19.04
 
  or
    
-      # for ubuntu Wily Werewolf
-      FROM quantumobject/docker-baseimage:15.10
+      # for ubuntu Bionic Beaver
+      FROM quantumobject/docker-baseimage:18.04
 
 
 ### Adding additional daemons
