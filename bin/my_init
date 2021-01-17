@@ -167,7 +167,7 @@ temp_var=$(echo $temp_var|sed "s/--//")
  if ! [ "$temp_var" = "" ] ; then
      #need to check if all service are online before executing command
      count=1
-     while [ $(/sbin/sv status /etc/service/* | grep -c "^down:") != 0 ]
+     while [ $(/usr/bin/sv status /etc/service/* | grep -c "^down:") != 0 ]
       do
        sleep 1
        count=`expr $count + 1`
