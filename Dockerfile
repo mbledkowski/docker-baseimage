@@ -1,4 +1,4 @@
-FROM debian:unstable-slim
+FROM debian:stable-slim
 MAINTAINER Maciej Błędkowski <23295125+mbledkowski@users.noreply.github.com>
 
 ADD . /build
